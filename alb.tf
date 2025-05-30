@@ -30,6 +30,7 @@ resource "aws_lb" "main" {
   security_groups            = [aws_security_group.alb.id]
   subnets                    = module.vpc.public_subnets
   enable_deletion_protection = false
+  drop_invalid_header_fields = true
 
   tags = var.tags
 }
