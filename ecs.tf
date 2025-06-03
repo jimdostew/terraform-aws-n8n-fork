@@ -59,7 +59,7 @@ resource "aws_ecs_task_definition" "taskdef" {
         },
         {
           name = "N8N_EDITOR_BASE_URL"
-          value = "${aws_lb.main.dns_name}"
+          value = "n8n.jimdo.dev"
         }
       ]
       logConfiguration = {
