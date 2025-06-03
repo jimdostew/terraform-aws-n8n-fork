@@ -58,7 +58,7 @@ resource "aws_ecs_task_definition" "taskdef" {
           value = "true"
         },
         {
-          name = "N8N_EDITOR_BASE_URL"
+          name  = "N8N_EDITOR_BASE_URL"
           value = "n8n.jimdo.dev"
         }
       ]
